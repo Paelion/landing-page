@@ -75,6 +75,23 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
+nav ul li:hover:after {
+    width: 100px;
+    left: 100px;
+
+}
+nav ul li :after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #FEB646;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
 /*** Bannière ***/
 .banner{
 
@@ -97,17 +114,106 @@ nav ul li a:hover{
     width: 40%;
     margin-top: -3%;
 }
+.banner--block h1{
+    font-family: Skia;
+    font-size: 40px;
+}
+.banner--block h2{
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10% 0 15% 0;
+}
+.banner--block button{
+    background-color: #F29696;
+    border: none;
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+    padding: 18px 60px;
+    border-radius: 50px;
+    margin-left: 30%;
+}
+.banner--block button:hover{
+    background-color: black;
+    color: white;
+}
+.banner--block{
+    margin: 8% 8% 10% 10%;
+}
+
+/*** Content txt ***/
+.content--center p{
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    width: 80vw;
+    text-align: justify;
+    margin: 10%;
+    line-height: 25px;
+}
+.content--center button{
+    background-color: #F29696;
+    border: none;
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+    padding: 15px 200px;
+    border-radius: 50px;
+    margin-left: 25%;
+}
 
 
 /*** Liste ***/
+.book{
+    display: flex;
+    justify-content: center;
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+}
+.content--book{
+    display: block;
+    width: 60%;
+}
+.content--book hr{
+    width: 40%;
+    margin-bottom: 5%;
+}
+.content--book h2{
+    font-family: Skia;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 10% 0 2% 35%;
+}
 .list--flex{
     display: flex;
 }
-.list img{
-    width: 10%;
+.list--img{
+    display: grid;
+    width: 200px;
 }
-.list{
-    width: 50%;
+.list--img img{
+    width: 70%;
+    margin: 15% 0;
+}
+.list--book{
+    width: 80%;
+}
+.list--book li{
+    font-family: "Helvetica Neue";
+    font-size: 23px;
+    margin-left: 20%;
+}
+.list--book li:nth-child(1){
+    margin: 8% 0 0 20%;
+}
+.list--book li:nth-child(2){
+    margin: 15% 0 0 20%;
+}
+.list--book li:nth-child(3){
+    margin: 13% 0 0 20%;
 }
 
 
@@ -115,9 +221,47 @@ nav ul li a:hover{
 .desc{
     background-color: #FFEFE6;
 }
+.desc p{
+    width: 80vw;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 25px;
+    padding:100px 120px;
+    margin: 5% 0;
+}
 
+/*** More ***/
+.more h2{
+    font-family: Skia;
+    font-size: 30px;
+    margin-left: 120px;
+}
+.more button{
+    background-color: #F29696;
+    border: none;
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 50px;
+    margin-top: 4%;
+    margin-left: 100px;
+}
 
 /*** Footer ***/
 footer{
-    background-color: #E8E8E8;
+    background-color: #eee;
+    height: 100px;
+    padding: 20px 0;
+    margin-top: 10%;
+}
+footer li{
+    font-family: "Helvetica Neue";
+    font-size: 11px;
+    font-weight: 300;
+    padding: 30px 120px 0;
+
 }
